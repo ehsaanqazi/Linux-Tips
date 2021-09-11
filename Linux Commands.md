@@ -11,7 +11,7 @@
 | 5     | tee  | [🔗](#tee)  | reads from standard input and writes to both standard output and one or more files at the same time |
 | 6     | head | [🔗](#head) | printing top part of files                                                                          |
 | 7     | tail | [🔗](#tail) | printing last part of files                                                                         |
-| 7     | find | [🔗](#find) | finding and replacing files                                                                         |
+| 8     | find | [🔗](#find) | finding and replacing files                                                                         |
 
 1. #### **grep**
 
