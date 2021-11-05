@@ -21,6 +21,7 @@ find . -name \*.srt -type f -delete
 ```bash
 openssl req --newkey rsa:2048 -nodes -keyout private.key -x509 -out certificate.crt
 ```
+
 ### Remove Duplicates
 
 ```bash
@@ -33,4 +34,8 @@ sort file.log | uniq -u
 ls | cat -n | while read n f; do mv "$f" "file-$n.jpg"; done
 ```
 
+### Save terminal history by removing duplicates
 
+```bash
+history | awk '{$1="";print substr($0,2)}' | sort | uniq -u  | awk '{$1=$1};1' > history.txt;
+```
