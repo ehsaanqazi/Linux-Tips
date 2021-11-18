@@ -1,7 +1,5 @@
 # Linux Commands
 
-> Basic Linux Commands. Open for contributions.
-
 | S. No | Name | URL         | Usage                                                                                               |
 | ----- | ---- | ----------- | --------------------------------------------------------------------------------------------------- |
 | 1     | grep | [🔗](#grep) | search for expressions                                                                              |
@@ -12,6 +10,7 @@
 | 6     | head | [🔗](#head) | printing top part of files                                                                          |
 | 7     | tail | [🔗](#tail) | printing last part of files                                                                         |
 | 8     | find | [🔗](#find) | finding and replacing files                                                                         |
+| 9     | curl | [🔗](#curl) | transfer data files                                                                                 |
 
 1. #### **grep**
 
@@ -498,3 +497,11 @@
      `find / -name flag.txt 2>/dev/null`
 
      [Back to Top](#linux-commands)
+
+9. ### **curl**
+
+   - basic usuage
+
+     `curl ehsaanqazi.com`
+
+   [Back to Top](#linux-commands)
