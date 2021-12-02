@@ -504,4 +504,60 @@
 
      `curl ehsaanqazi.com`
 
-   [Back to Top](#linux-commands)
+   * urls having sequence
+
+     `curl ehsaanqazi.com/[1-10].txt`
+
+   * show http headers
+
+     `curl -I --http2 https://ehsaanqazi.com`
+
+   * check if a website supports http
+
+     `curl -I --http2 -s https://linuxize.com/ | grep HTTP`
+
+   - to show progress bar
+
+     `curl -# -o index.html ehsaanqazi.com`
+
+   - to hide the progress meter
+
+     `curl --silent ehsaanqazi.com`
+
+   * save file on the machine with a custom name
+
+     `curl -o index.html ehsaanqazi.com`
+
+   - save file on the machine with original name
+
+     `curl -O ehsaanqazi.com`
+
+   * follow a redirect
+
+     `curl -L ehsaanqazi.com`
+
+   - resume downloads
+
+     `curl -C - -O ehsaanqazi.com`
+
+   - limit rate
+
+     `curl --limit-rate 1K -O ehsaanqazi.com`
+
+   * send cookies
+
+     `curl -b "language=en" ehsaanqazi.com`
+
+   - download files from FTP server
+
+     `curl -u admin:password -O https://ftp.ehsaanqazi.com`
+
+   - upload a file to FTP server and if exists append it
+
+     `curl -u admin:password -T -a hos.txt https://ftp.ehsaanqazi.com`
+
+   - send url through proxy
+
+     `curl --proxy http://127.0.0.1:8080 ehsaanqazi.com`
+
+[Back to Top](#linux-commands)
