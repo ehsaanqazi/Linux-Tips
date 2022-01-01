@@ -1,16 +1,19 @@
 # Linux Commands
 
-| S. No | Name | URL         | Usage                                                                                               |
-| ----- | ---- | ----------- | --------------------------------------------------------------------------------------------------- |
-| 1     | grep | [🔗](#grep) | search for expressions                                                                              |
-| 2     | cat  | [🔗](#cat)  | reading data                                                                                        |
-| 3     | cut  | [🔗](#cut)  | cutting out the selections                                                                          |
-| 4     | sed  | [🔗](#sed)  | find, filtering and replacing text                                                                  |
-| 5     | tee  | [🔗](#tee)  | reads from standard input and writes to both standard output and one or more files at the same time |
-| 6     | head | [🔗](#head) | printing top part of files                                                                          |
-| 7     | tail | [🔗](#tail) | printing last part of files                                                                         |
-| 8     | find | [🔗](#find) | finding and replacing files                                                                         |
-| 9     | curl | [🔗](#curl) | transfer data files                                                                                 |
+| S. No | Name  | URL          | Usage                                                                                               |
+| ----- | ----- | ------------ | --------------------------------------------------------------------------------------------------- |
+| 1     | grep  | [🔗](#grep)  | search for expressions                                                                              |
+| 2     | cat   | [🔗](#cat)   | reading data                                                                                        |
+| 3     | cut   | [🔗](#cut)   | cutting out the selections                                                                          |
+| 4     | sed   | [🔗](#sed)   | find, filtering and replacing text                                                                  |
+| 5     | tee   | [🔗](#tee)   | reads from standard input and writes to both standard output and one or more files at the same time |
+| 6     | head  | [🔗](#head)  | printing top part of files                                                                          |
+| 7     | tail  | [🔗](#tail)  | printing last part of files                                                                         |
+| 8     | find  | [🔗](#find)  | finding and replacing files                                                                         |
+| 9     | curl  | [🔗](#curl)  | transfer data files                                                                                 |
+| 10    | chmod | [🔗](#chmod) | used to change permission of files files                                                            |
+
+|
 
 1. #### **grep**
 
@@ -559,5 +562,54 @@
    - send url through proxy
 
      `curl --proxy http://127.0.0.1:8080 ehsaanqazi.com`
+
+[Back to Top](#linux-commands)
+
+10. ### chmod
+
+    **u: User, meaning the owner of the file.**
+    **g: Group, meaning members of the group the file belongs to.**
+    **o: Others, meaning people not governed by the u and g permissions.**
+    **a: All, meaning all of the above.**
+    **- sign removes the permission**
+    **+ sign adds the permission**
+    **= sign set a permission and remove others**
+    **r: read permission**
+    **w: write permission**
+    **x: execute permission**
+
+- change the permission to read
+
+  `chmod u+r file.txt`
+
+  `chmod g+r file.txt`
+
+  `chmod o+r file.txt`
+
+  `chmod a+r file.txt`
+
+- remove the permission to read
+
+  `chmod u-r file.txt`
+
+* change the permission to write
+
+  `chmod u+w file.txt`
+
+* remove the permission to write
+
+  `chmod u-w file.txt`
+
+* change the permission to execute
+
+  `chmod u+x file.txt`
+
+* remove the permission to execute
+
+  `chmod u-x file.txt`
+
+* add read permission to all txt files
+
+  `chmod u+r *.txt`
 
 [Back to Top](#linux-commands)
