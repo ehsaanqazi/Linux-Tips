@@ -12,6 +12,7 @@
 | 8     | find  | [🔗](#find)  | finding and replacing files                                                                         |
 | 9     | curl  | [🔗](#curl)  | transfer data files                                                                                 |
 | 10    | chmod | [🔗](#chmod) | used to change permission of files files                                                            |
+| 11    | wc    | [🔗](#wc)    | used for counting lines and characters                                                              |
 
 |
 
@@ -611,5 +612,33 @@
 * add read permission to all txt files
 
   `chmod u+r *.txt`
+
+[Back to Top](#linux-commands)
+
+11. ### wc
+
+- count new lines in a file
+
+  `cat file.txt | wc -l`
+
+* count words
+
+  `cat file.txt | wc -w`
+
+* count characters
+
+  `cat file.txt | wc -c`
+
+* count length of longest line
+
+  `cat file.txt | wc -L`
+
+* print counts at once
+
+  `wc file.txt`
+
+* pass multiple files
+
+  `wc file.txt file2.txt`
 
 [Back to Top](#linux-commands)

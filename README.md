@@ -12,3 +12,4 @@
 | 8     | find  | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | finding and replacing files                                                                         |
 | 9     | curl  | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | transfer data files                                                                                 |
 | 10    | chmod | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | used to change permission of files files                                                            |
+| 11    | wc    | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | used for counting lines and characters                                                              |
