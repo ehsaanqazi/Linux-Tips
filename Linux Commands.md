@@ -13,8 +13,7 @@
 | 9     | curl  | [🔗](#curl)  | transfer data files                                                                                 |
 | 10    | chmod | [🔗](#chmod) | used to change permission of files files                                                            |
 | 11    | wc    | [🔗](#wc)    | used for counting lines and characters                                                              |
-
-|
+| 12    | wget  | [🔗](#wget)  | retrieve content files                                                                              |
 
 1. #### **grep**
 
@@ -640,5 +639,57 @@
 * pass multiple files
 
   `wc file.txt file2.txt`
+
+[Back to Top](#linux-commands)
+
+12. ### wget
+
+- download a file
+
+  `wget https://ehsaanqazi.com/file.txt`
+
+* download files from a list of urls
+
+  `wget -i https://ehsaanqazi.com/file.txt`
+
+* download file in custom location
+
+  `wget -P Desktop https://ehsaanqazi.com/file.txt`
+
+* download file with limited speed
+
+  `wget --limit-rate=50kb https://ehsaanqazi.com/file.txt`
+
+* set custom number of retry attempts
+
+  `wget -tries=10 https://ehsaanqazi.com/file.txt`
+
+* download file with custom name
+
+  `wget -O https://ehsaanqazi.com/file.txt script.txt`
+
+* run wget in background
+
+  `wget -b https://ehsaanqazi.com/file.txt`
+
+* changing the user-agent header
+
+  `wget --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/50.0" http://ehsaanqazi.com`
+
+* download files from server having invalid certificate
+
+  `wget --no-check-certificate https://ehsaanqazi.com`
+
+* download files via ftp
+
+  `wget --ftp-user=admin --ftp-password=admin ftp://ehsaanqazi.com/file.txt`
+
+* continue interrupted downloads
+
+  `wget -c https://ehsaanqazi.com/file.txt`
+
+* download files in sequence
+
+  `wget http://ehsaanqazi.com/file{1..20}.txt`
 
 [Back to Top](#linux-commands)
