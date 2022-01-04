@@ -14,6 +14,7 @@
 | 10    | chmod | [🔗](#chmod) | used to change permission of files files                                                            |
 | 11    | wc    | [🔗](#wc)    | used for counting lines and characters                                                              |
 | 12    | wget  | [🔗](#wget)  | retrieve content files                                                                              |
+| 13    | gzip  | [🔗](#gzip)  | used to compress files                                                                              |
 
 1. #### **grep**
 
@@ -691,5 +692,49 @@
 * download files in sequence
 
   `wget http://ehsaanqazi.com/file{1..20}.txt`
+
+[Back to Top](#linux-commands)
+
+13. ### gzip
+
+- compress a file
+
+  `gzip file.txt`
+
+* compress multiple files
+
+  `gzip file.txt app.txt script.py`
+
+* compress a file and keep original one
+
+  `gzip -k file.txt`
+
+* display the license of a compressed file
+
+  `gzip -L file.txt.gz`
+
+* recursively compress every file in a folder
+
+  `gzip -r videos`
+
+* set the custom compression level
+
+  `gzip -9 file.txt`
+
+* display the reduction in percentage
+
+  `gzip -v file.txt`
+
+* de-compress the file
+
+  `gzip -d file.txt.gz`
+
+* keep the original while after decompression
+
+  `gzip -dk file.txt.gz`
+
+* decompress all files in a directory
+
+  `gzip -r videos`
 
 [Back to Top](#linux-commands)
