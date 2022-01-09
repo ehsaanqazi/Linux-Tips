@@ -15,3 +15,4 @@
 | 11    | wc    | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | used for counting lines and characters                                                              |
 | 12    | wget  | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | retrieve content files                                                                              |
 | 13    | gzip  | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | used to compress files                                                                              |
+| 14    | sudo  | [🔗](https://github.com/ehsaanqazi/Linux-Tips/blob/main/Linux%20Commands.md) | grant permissions to user                                                                           |

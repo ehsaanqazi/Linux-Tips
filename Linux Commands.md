@@ -15,6 +15,7 @@
 | 11    | wc    | [🔗](#wc)    | used for counting lines and characters                                                              |
 | 12    | wget  | [🔗](#wget)  | retrieve content files                                                                              |
 | 13    | gzip  | [🔗](#gzip)  | used to compress files                                                                              |
+| 14    | sudo  | [🔗](#sudo)  | grant permissions to user                                                                           |
 
 1. #### **grep**
 
@@ -736,5 +737,41 @@
 * decompress all files in a directory
 
   `gzip -r videos`
+
+[Back to Top](#linux-commands)
+
+14. ### sudo
+
+- basic usuage
+
+  `sudo ls`
+
+* print the list of commmands granted and forbidden for the current user
+
+  `sudo -l`
+
+* display the version
+
+  `sudo -V`
+
+* increase the timestamp by 5 minutes
+
+  `sudo -v`
+
+* kill the temestamp
+
+  `sudo -k`
+
+* run command as different user
+
+  `sudo -u ehsaan ls`
+
+* execute previous command with sudo
+
+  `sudo !!`
+
+* execute command by history number as sudo
+
+  `sudo !3`
 
 [Back to Top](#linux-commands)
